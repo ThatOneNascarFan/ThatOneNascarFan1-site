@@ -11,35 +11,71 @@
       color: #f5f5f5;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to bottom, #111 0%, #1a1a1a 100%);
     }
     header {
       background: url('https://i.imgur.com/Ykqcpfz.jpeg') no-repeat center center;
       background-size: cover;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
     header img {
       width: 100px;
       height: 100px;
       object-fit: cover;
       border-radius: 50%;
+      border: 3px solid #fff;
     }
     h1 {
       margin-top: 10px;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #ffcc00;
+      color: #ffcc00;
+      animation: glowTitle 2s infinite alternate;
+    }
+    @keyframes glowTitle {
+      0% { text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00; }
+      100% { text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00; }
     }
     main {
       padding: 20px;
       max-width: 800px;
       margin: auto;
     }
-    .video, .top-videos, .about-me, .comments {
+    section {
       margin-top: 40px;
+    }
+    section h2 {
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+      font-family: 'Impact', sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+    section ul li {
+      padding: 5px 0;
+      border-bottom: 1px dashed #333;
+    }
+    section ul {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    section ul li:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 5px;
+      padding-left: 5px;
+      transition: all 0.2s ease-in-out;
     }
     .video img {
       width: 100%;
       max-width: 560px;
       display: block;
       margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
     .video p, .comments p {
       text-align: center;
@@ -51,6 +87,16 @@
     .top-videos a {
       color: #ffcc00;
       text-decoration: none;
+      font-weight: bold;
+    }
+    .top-videos a:hover {
+      text-decoration: underline;
+    }
+    .top-videos ul li {
+      transition: transform 0.2s;
+    }
+    .top-videos ul li:hover {
+      transform: translateX(5px);
     }
     .channel-link {
       text-align: center;
@@ -61,25 +107,18 @@
       text-decoration: underline;
       font-weight: bold;
     }
-    .comments form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 500px;
-      margin: auto;
-    }
-    .comments textarea {
-      padding: 10px;
-      border-radius: 5px;
-      resize: vertical;
-    }
-    .comments button {
-      padding: 10px;
+    .comments a {
       background-color: #d92323;
-      color: #fff;
-      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
       border-radius: 5px;
-      cursor: pointer;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    .comments a:hover {
+      background-color: #ff4444;
     }
     footer {
       background-color: #222;
@@ -87,8 +126,40 @@
       text-align: center;
       font-size: 14px;
       color: #999;
+      margin-top: 60px;
     }
-  </style>
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      header img {
+        width: 80px;
+        height: 80px;
+      }
+      main {
+        padding: 15px;
+      }
+    }
+  .submit-idea-button {
+      background-color: #d92323;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px #d92323;
+      animation: glowButton 2s infinite alternate;
+    }
+
+    @keyframes glowButton {
+      0% { box-shadow: 0 0 5px #ff4444; }
+    </style>
+100% { box-shadow: 0 0 20px #ff4444; }
+    }
+
+
 </head>
 <body>
   <header>
@@ -101,7 +172,6 @@
       <h2>About the Channel</h2>
       <p>ThatOneNascarFan1 is where NASCAR fans come for nonstop action. From insane crashes to emotional moments, this channel delivers high-energy edits, nostalgic throwbacks, and jaw-dropping race highlights. Whether you're here for wild flips, championship glory, or just to relive the best NASCAR moments ever, you're in the right place.</p>
     </section>
-
     <section class="video">
       <h2>Latest Video</h2>
       <a href="https://youtube.com/shorts/dijYyEvdc6A?si=q8DUjPhyaaVLBqko" target="_blank">
@@ -109,7 +179,6 @@
       </a>
       <p>🎬 Watch the Latest NASCAR Short on YouTube</p>
     </section>
-
     <section class="top-videos">
       <h2>Top 5 Most Viewed Videos</h2>
       <ul>
@@ -120,27 +189,21 @@
         <li><a href="https://youtube.com/shorts/1qv3OGdv92M?si=KZpP7AqLucE073Qb" target="_blank">#5 Most Viewed</a></li>
       </ul>
     </section>
-
-    <section class="about-me">
-      <h2>About Me</h2>
-      <p>Hey! I'm 13 years old and a huge fan of Jimmie Johnson and Ross Chastain. I support Tottenham Hotspur and Bayern Munich, and I’ve been making videos for 5 years (had to restart though 😅). I love editing, racing content, and making people laugh and hype through my videos. Thanks for stopping by!</p>
+    <section class="channel-link">
+      <h2>Visit the Full YouTube Channel</h2>
+      <a href="https://www.youtube.com/@TheOneNascarFan1" target="_blank">👉 youtube.com/@TheOneNascarFan1</a>
     </section>
-
-    <section class="comments">
-  <h2>Suggest a NASCAR Short Idea!</h2>
-  <p>Got an idea for a crazy crash, iconic moment, or hilarious edit? Submit it using the button below!</p>
+  <section class="comments">
+  <h2>Submit a NASCAR Short Idea</h2>
+  <p>Got a wild moment, crash, meme, or finish you think should be featured? Share it here:</p>
   <div style="text-align: center; margin-top: 20px;">
-    <a href="https://docs.google.com/forms/d/1wR5rpIwDpYxRBYVFPAV7D6TCrA_mFpkCOiNleOO8KUQ/viewform" target="_blank" style="background-color: #d92323; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Submit an Idea</a>
+    <a href="https://docs.google.com/forms/d/1wR5rpIwDpYxRBYVFPAV7D6TCrA_mFpkCOiNleOO8KUQ/viewform" target="_blank" class="submit-idea-button">Submit an Idea</a>
   </div>
 </section>
-
-    <div class="channel-link">
-      <p>📺 Visit the full YouTube channel: <a href="https://www.youtube.com/@TheOneNascarFan1" target="_blank">@TheOneNascarFan1</a></p>
-    </div>
-  </main>
-
+</main>
   <footer>
     <p>&copy; 2025 ThatOneNascarFan1 | Powered by NASCAR Passion and High-Octane Edits</p>
   </footer>
 </body>
 </html>
+
