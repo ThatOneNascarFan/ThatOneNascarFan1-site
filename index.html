@@ -53,72 +53,26 @@
       letter-spacing: 1px;
       margin-bottom: 15px;
     }
-    section ul li {
-      padding: 5px 0;
-      border-bottom: 1px dashed #333;
-    }
-    section ul {
-      background: rgba(255, 255, 255, 0.02);
+    .quiz-block {
+      background: rgba(255,255,255,0.05);
       border-radius: 10px;
       padding: 15px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      margin-bottom: 20px;
     }
-    section ul li:hover {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 5px;
-      padding-left: 5px;
-      transition: all 0.2s ease-in-out;
-    }
-    .video img {
-      width: 100%;
-      max-width: 560px;
-      display: block;
-      margin: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    }
-    .video p, .comments p {
-      text-align: center;
-    }
-    .top-videos ul {
-      list-style-type: decimal;
-      padding-left: 20px;
-    }
-    .top-videos a {
+    .quiz-block h3 {
       color: #ffcc00;
-      text-decoration: none;
-      font-weight: bold;
     }
-    .top-videos a:hover {
-      text-decoration: underline;
+    .quiz-block ul {
+      list-style-type: none;
+      padding: 0;
     }
-    .top-videos ul li {
-      transition: transform 0.2s;
+    .quiz-block li {
+      margin-bottom: 8px;
     }
-    .top-videos ul li:hover {
-      transform: translateX(5px);
-    }
-    .channel-link {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .channel-link a {
-      color: #f5f5f5;
-      text-decoration: underline;
-      font-weight: bold;
-    }
-    .comments a {
-      background-color: #d92323;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s;
-    }
-    .comments a:hover {
-      background-color: #ff4444;
+    .answer-key {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      padding: 15px;
     }
     footer {
       background-color: #222;
@@ -128,38 +82,7 @@
       color: #999;
       margin-top: 60px;
     }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
-      }
-      header img {
-        width: 80px;
-        height: 80px;
-      }
-      main {
-        padding: 15px;
-      }
-    }
-  .submit-idea-button {
-      background-color: #d92323;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s, box-shadow 0.3s;
-      box-shadow: 0 0 10px #d92323;
-      animation: glowButton 2s infinite alternate;
-    }
-
-    @keyframes glowButton {
-      0% { box-shadow: 0 0 5px #ff4444; }
-    </style>
-100% { box-shadow: 0 0 20px #ff4444; }
-    }
-
-
+  </style>
 </head>
 <body>
   <header>
@@ -170,8 +93,9 @@
   <main>
     <section>
       <h2>About the Channel</h2>
-      <p>ThatOneNascarFan1 is where NASCAR fans come for nonstop action. From insane crashes to emotional moments, this channel delivers high-energy edits, nostalgic throwbacks, and jaw-dropping race highlights. Whether you're here for wild flips, championship glory, or just to relive the best NASCAR moments ever, you're in the right place.</p>
+      <p>ThatOneNascarFan1 is where NASCAR fans come for nonstop action...</p>
     </section>
+
     <section class="video">
       <h2>Latest Video</h2>
       <a href="https://youtube.com/shorts/dijYyEvdc6A?si=q8DUjPhyaaVLBqko" target="_blank">
@@ -179,31 +103,56 @@
       </a>
       <p>🎬 Watch the Latest NASCAR Short on YouTube</p>
     </section>
-    <section class="top-videos">
-      <h2>Top 5 Most Viewed Videos</h2>
-      <ul>
-        <li><a href="https://youtube.com/shorts/DbdrtZjM9cI?si=OMK5zrd7rmt84-bp" target="_blank">#1 Most Viewed</a></li>
-        <li><a href="https://youtube.com/shorts/oVXIppqGxC8?si=t4oH4WfjDJuC9ht4" target="_blank">#2 Most Viewed</a></li>
-        <li><a href="https://youtube.com/shorts/K0ZJlJpV8cA?si=Q9vaK0ptWbe5c5N9" target="_blank">#3 Most Viewed</a></li>
-        <li><a href="https://youtube.com/shorts/4Oxm2mhZg4I?si=0HBe46Ov-WF-zFqn" target="_blank">#4 Most Viewed</a></li>
-        <li><a href="https://youtube.com/shorts/1qv3OGdv92M?si=KZpP7AqLucE073Qb" target="_blank">#5 Most Viewed</a></li>
-      </ul>
+
+    <section class="quiz-section">
+      <h2>Quizzes</h2>
+      <div class="quiz-block"><h3>Easy Quiz 1</h3><ul><li>1. What is NASCAR short for?</li><li>2. What shape is the Daytona track?</li><li>3. What color flag starts a race?</li><li>4. How many wheels are on a stock car?</li><li>5. What number did Dale Jr. famously drive?</li></ul></div>
+      <div class="quiz-block"><h3>Easy Quiz 2</h3><ul><li>1. What’s the name of NASCAR’s top series?</li><li>2. Where is Charlotte Motor Speedway?</li><li>3. What flag ends a race?</li><li>4. What brand is common in NASCAR? Ford, Chevy, or Honda?</li><li>5. What’s the name of the famous Daytona race?</li></ul></div>
+      <div class="quiz-block"><h3>Easy Quiz 3</h3><ul><li>1. What state is Talladega in?</li><li>2. What do pit crews do?</li><li>3. What number is used by Kyle Busch?</li><li>4. What’s the main surface of NASCAR tracks?</li><li>5. What year was NASCAR founded?</li></ul></div>
+      <div class="quiz-block"><h3>Easy Quiz 4</h3><ul><li>1. What’s a lap?</li><li>2. What’s a caution?</li><li>3. How many drivers are usually in a race?</li><li>4. What’s the winner’s prize called?</li><li>5. What’s the name of NASCAR’s playoffs?</li></ul></div>
+      <div class="quiz-block"><h3>Easy Quiz 5</h3><ul><li>1. What is a pit stop?</li><li>2. What track is shaped like a triangle?</li><li>3. Who drives car #9?</li><li>4. What kind of fuel do NASCARs use?</li><li>5. How many gears do stock cars usually have?</li></ul></div>
+
+      <div class="quiz-block"><h3>Medium Quiz 1</h3><ul><li>1. Who won the 2020 Cup Championship?</li><li>2. What’s the length of Bristol?</li><li>3. Who’s known for the “Hail Melon” move?</li><li>4. What track hosts the Southern 500?</li><li>5. What does DNF stand for?</li></ul></div>
+      <div class="quiz-block"><h3>Medium Quiz 2</h3><ul><li>1. What manufacturer did Tony Stewart drive?</li><li>2. What year did Jimmie Johnson retire?</li><li>3. What race has the nickname “The Great American Race”?</li><li>4. How long is a NASCAR season?</li><li>5. What’s a restrictor plate?</li></ul></div>
+      <div class="quiz-block"><h3>Medium Quiz 3</h3><ul><li>1. What’s the shortest track in the Cup Series?</li><li>2. What tire manufacturer does NASCAR use?</li><li>3. What’s the maximum pit crew size?</li><li>4. Where is Martinsville?</li><li>5. Who drives the #20 car?</li></ul></div>
+      <div class="quiz-block"><h3>Medium Quiz 4</h3><ul><li>1. What track was the site of the first NASCAR race?</li><li>2. What car did Jeff Gordon famously drive?</li><li>3. What’s the name of NASCAR’s second-tier series?</li><li>4. What does the red flag mean?</li><li>5. How long is Talladega?</li></ul></div>
+      <div class="quiz-block"><h3>Medium Quiz 5</h3><ul><li>1. What is a stage win?</li><li>2. What driver is known for “Rowdy” nickname?</li><li>3. What’s the difference between Xfinity and Cup cars?</li><li>4. Who won the first Daytona 500?</li><li>5. What track is near Chicago?</li></ul></div>
+
+      <div class="quiz-block"><h3>Hard Quiz 1</h3><ul><li>1. Who won the 1984 Firecracker 400?</li><li>2. What was Richard Petty’s final win?</li><li>3. What car did Alan Kulwicki drive?</li><li>4. What track did Tim Richmond dominate?</li><li>5. What was the “pass in the grass”?</li></ul></div>
+      <div class="quiz-block"><h3>Hard Quiz 2</h3><ul><li>1. What year did Earnhardt win his only Daytona 500?</li><li>2. What track is called the “Monster Mile”?</li><li>3. What engine is used in Next Gen cars?</li><li>4. Who won the last Winston Cup?</li><li>5. What team did Carl Edwards drive for in 2016?</li></ul></div>
+      <div class="quiz-block"><h3>Hard Quiz 3</h3><ul><li>1. Who was the first black driver to win in Cup?</li><li>2. What’s the rarest track type?</li><li>3. What’s the longest oval on the schedule?</li><li>4. What year did Jimmie Johnson win 10 races?</li><li>5. What track did Kyle Busch sweep all 3 series?</li></ul></div>
+      <div class="quiz-block"><h3>Hard Quiz 4</h3><ul><li>1. What was the last track added to the schedule?</li><li>2. What was the final race for Tony Stewart?</li><li>3. Who won the 2000 Brickyard 400?</li><li>4. What driver had the most DNFs in 2021?</li><li>5. What’s the fastest recorded NASCAR lap?</li></ul></div>
+      <div class="quiz-block"><h3>Hard Quiz 5</h3><ul><li>1. Who holds the record for most starts?</li><li>2. What track did David Pearson dominate?</li><li>3. What year was the COT introduced?</li><li>4. Who led the most laps in 2014?</li><li>5. What’s the shortest race by time?</li></ul></div>
+      <div class="quiz-block"><h3>Hard Quiz 6</h3><ul><li>1. What driver had the most poles in a season?</li><li>2. What’s the largest field ever in a Cup race?</li><li>3. Who won the first race after Dale Sr.’s death?</li><li>4. Who replaced Matt Kenseth in the #20?</li><li>5. What’s the lap record at Martinsville?</li></ul></div>
     </section>
-    <section class="channel-link">
-      <h2>Visit the Full YouTube Channel</h2>
-      <a href="https://www.youtube.com/@TheOneNascarFan1" target="_blank">👉 youtube.com/@TheOneNascarFan1</a>
+
+    <section class="answer-key">
+      <h2>Answer Key</h2>
+      <p><strong>Easy Quizzes:</strong><br>
+      Quiz 1: 1-A, 2-B, 3-A, 4-A, 5-B<br>
+      Quiz 2: 1-B, 2-A, 3-A, 4-B, 5-A<br>
+      Quiz 3: 1-A, 2-A, 3-B, 4-A, 5-A<br>
+      Quiz 4: 1-A, 2-A, 3-A, 4-A, 5-A<br>
+      Quiz 5: 1-A, 2-A, 3-A, 4-A, 5-B</p>
+
+      <p><strong>Medium Quizzes:</strong><br>
+      Quiz 1: 1-A, 2-A, 3-A, 4-A, 5-A<br>
+      Quiz 2: 1-B, 2-A, 3-A, 4-C, 5-A<br>
+      Quiz 3: 1-A, 2-A, 3-B, 4-A, 5-B<br>
+      Quiz 4: 1-A, 2-B, 3-B, 4-B, 5-A<br>
+      Quiz 5: 1-A, 2-A, 3-C, 4-A, 5-B</p>
+
+      <p><strong>Hard Quizzes:</strong><br>
+      Quiz 1: 1-A, 2-B, 3-B, 4-B, 5-B<br>
+      Quiz 2: 1-A, 2-B, 3-A, 4-A, 5-A<br>
+      Quiz 3: 1-A, 2-B, 3-C, 4-D, 5-E<br>
+      Quiz 4: 1-A, 2-B, 3-C, 4-D, 5-E<br>
+      Quiz 5: 1-A, 2-B, 3-C, 4-D, 5-E<br>
+      Quiz 6: 1-A, 2-B, 3-C, 4-D, 5-E</p>
     </section>
-  <section class="comments">
-  <h2>Submit a NASCAR Short Idea</h2>
-  <p>Got a wild moment, crash, meme, or finish you think should be featured? Share it here:</p>
-  <div style="text-align: center; margin-top: 20px;">
-    <a href="https://docs.google.com/forms/d/1wR5rpIwDpYxRBYVFPAV7D6TCrA_mFpkCOiNleOO8KUQ/viewform" target="_blank" class="submit-idea-button">Submit an Idea</a>
-  </div>
-</section>
-</main>
+  </main>
   <footer>
     <p>&copy; 2025 ThatOneNascarFan1 | Powered by NASCAR Passion and High-Octane Edits</p>
   </footer>
 </body>
 </html>
-
