@@ -58,6 +58,7 @@
       border-radius: 10px;
       padding: 15px;
       margin-bottom: 20px;
+      line-height: 1.8;
     }
     .quiz-block h3 {
       color: #ffcc00;
@@ -67,12 +68,31 @@
       padding: 0;
     }
     .quiz-block li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .answer-key {
       background: rgba(255,255,255,0.05);
       border-radius: 10px;
       padding: 15px;
+      line-height: 1.8;
+    }
+    .submit-button {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .submit-button a {
+      background-color: #d92323;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 0 12px #d92323;
+      transition: background-color 0.3s ease;
+    }
+    .submit-button a:hover {
+      background-color: #ff4444;
     }
     footer {
       background-color: #222;
@@ -98,57 +118,89 @@
 
     <section class="video">
       <h2>Latest Video</h2>
-      <a href="https://youtube.com/shorts/3NEeM8Yb7Dk?si=EuO7haWcztOx3K5c" target="_blank">
-        <img src="https://img.youtube.com/vi/dijYyEvdc6A/hqdefault.jpg" alt="Watch Latest NASCAR Short">
+      <a href="https://youtube.com/shorts/3NEeM8Yb7Dk?feature=share" target="_blank">
+        <img src="https://img.youtube.com/vi/3NEeM8Yb7Dk/hqdefault.jpg" alt="Watch Latest NASCAR Short">
       </a>
       <p>🎬 Watch the Latest NASCAR Short on YouTube</p>
     </section>
 
-    <section class="quiz-section">
+    <div class="submit-button">
+      <a href="https://docs.google.com/forms/d/1wR5rpIwDpYxRBYVFPAV7D6TCrA_mFpkCOiNleOO8KUQ/viewform" target="_blank">💡 Submit a NASCAR Short Idea</a>
+    </div>
+
+    <section>
       <h2>Quizzes</h2>
-      <div class="quiz-block"><h3>Easy Quiz 1</h3><ul><li>1. What is NASCAR short for?</li><li>2. What shape is the Daytona track?</li><li>3. What color flag starts a race?</li><li>4. How many wheels are on a stock car?</li><li>5. What number did Dale Jr. famously drive?</li></ul></div>
-      <div class="quiz-block"><h3>Easy Quiz 2</h3><ul><li>1. What’s the name of NASCAR’s top series?</li><li>2. Where is Charlotte Motor Speedway?</li><li>3. What flag ends a race?</li><li>4. What brand is common in NASCAR? Ford, Chevy, or Honda?</li><li>5. What’s the name of the famous Daytona race?</li></ul></div>
-      <div class="quiz-block"><h3>Easy Quiz 3</h3><ul><li>1. What state is Talladega in?</li><li>2. What do pit crews do?</li><li>3. What number is used by Kyle Busch?</li><li>4. What’s the main surface of NASCAR tracks?</li><li>5. What year was NASCAR founded?</li></ul></div>
-      <div class="quiz-block"><h3>Easy Quiz 4</h3><ul><li>1. What’s a lap?</li><li>2. What’s a caution?</li><li>3. How many drivers are usually in a race?</li><li>4. What’s the winner’s prize called?</li><li>5. What’s the name of NASCAR’s playoffs?</li></ul></div>
-      <div class="quiz-block"><h3>Easy Quiz 5</h3><ul><li>1. What is a pit stop?</li><li>2. What track is shaped like a triangle?</li><li>3. Who drives car #9?</li><li>4. What kind of fuel do NASCARs use?</li><li>5. How many gears do stock cars usually have?</li></ul></div>
-
-      <div class="quiz-block"><h3>Medium Quiz 1</h3><ul><li>1. Who won the 2020 Cup Championship?</li><li>2. What’s the length of Bristol?</li><li>3. Who’s known for the “Hail Melon” move?</li><li>4. What track hosts the Southern 500?</li><li>5. What does DNF stand for?</li></ul></div>
-      <div class="quiz-block"><h3>Medium Quiz 2</h3><ul><li>1. What manufacturer did Tony Stewart drive?</li><li>2. What year did Jimmie Johnson retire?</li><li>3. What race has the nickname “The Great American Race”?</li><li>4. How long is a NASCAR season?</li><li>5. What’s a restrictor plate?</li></ul></div>
-      <div class="quiz-block"><h3>Medium Quiz 3</h3><ul><li>1. What’s the shortest track in the Cup Series?</li><li>2. What tire manufacturer does NASCAR use?</li><li>3. What’s the maximum pit crew size?</li><li>4. Where is Martinsville?</li><li>5. Who drives the #20 car?</li></ul></div>
-      <div class="quiz-block"><h3>Medium Quiz 4</h3><ul><li>1. What track was the site of the first NASCAR race?</li><li>2. What car did Jeff Gordon famously drive?</li><li>3. What’s the name of NASCAR’s second-tier series?</li><li>4. What does the red flag mean?</li><li>5. How long is Talladega?</li></ul></div>
-      <div class="quiz-block"><h3>Medium Quiz 5</h3><ul><li>1. What is a stage win?</li><li>2. What driver is known for “Rowdy” nickname?</li><li>3. What’s the difference between Xfinity and Cup cars?</li><li>4. Who won the first Daytona 500?</li><li>5. What track is near Chicago?</li></ul></div>
-
-      <div class="quiz-block"><h3>Hard Quiz 1</h3><ul><li>1. Who won the 1984 Firecracker 400?</li><li>2. What was Richard Petty’s final win?</li><li>3. What car did Alan Kulwicki drive?</li><li>4. What track did Tim Richmond dominate?</li><li>5. What was the “pass in the grass”?</li></ul></div>
-      <div class="quiz-block"><h3>Hard Quiz 2</h3><ul><li>1. What year did Earnhardt win his only Daytona 500?</li><li>2. What track is called the “Monster Mile”?</li><li>3. What engine is used in Next Gen cars?</li><li>4. Who won the last Winston Cup?</li><li>5. What team did Carl Edwards drive for in 2016?</li></ul></div>
-      <div class="quiz-block"><h3>Hard Quiz 3</h3><ul><li>1. Who was the first black driver to win in Cup?</li><li>2. What’s the rarest track type?</li><li>3. What’s the longest oval on the schedule?</li><li>4. What year did Jimmie Johnson win 10 races?</li><li>5. What track did Kyle Busch sweep all 3 series?</li></ul></div>
-      <div class="quiz-block"><h3>Hard Quiz 4</h3><ul><li>1. What was the last track added to the schedule?</li><li>2. What was the final race for Tony Stewart?</li><li>3. Who won the 2000 Brickyard 400?</li><li>4. What driver had the most DNFs in 2021?</li><li>5. What’s the fastest recorded NASCAR lap?</li></ul></div>
-      <div class="quiz-block"><h3>Hard Quiz 5</h3><ul><li>1. Who holds the record for most starts?</li><li>2. What track did David Pearson dominate?</li><li>3. What year was the COT introduced?</li><li>4. Who led the most laps in 2014?</li><li>5. What’s the shortest race by time?</li></ul></div>
-      <div class="quiz-block"><h3>Hard Quiz 6</h3><ul><li>1. What driver had the most poles in a season?</li><li>2. What’s the largest field ever in a Cup race?</li><li>3. Who won the first race after Dale Sr.’s death?</li><li>4. Who replaced Matt Kenseth in the #20?</li><li>5. What’s the lap record at Martinsville?</li></ul></div>
-    </section>
-
-    <section class="answer-key">
-      <h2>Answer Key</h2>
-      <p><strong>Easy Quizzes:</strong><br>
-      Quiz 1: 1-A, 2-B, 3-A, 4-A, 5-B<br>
-      Quiz 2: 1-B, 2-A, 3-A, 4-B, 5-A<br>
-      Quiz 3: 1-A, 2-A, 3-B, 4-A, 5-A<br>
-      Quiz 4: 1-A, 2-A, 3-A, 4-A, 5-A<br>
-      Quiz 5: 1-A, 2-A, 3-A, 4-A, 5-B</p>
-
-      <p><strong>Medium Quizzes:</strong><br>
-      Quiz 1: 1-A, 2-A, 3-A, 4-A, 5-A<br>
-      Quiz 2: 1-B, 2-A, 3-A, 4-C, 5-A<br>
-      Quiz 3: 1-A, 2-A, 3-B, 4-A, 5-B<br>
-      Quiz 4: 1-A, 2-B, 3-B, 4-B, 5-A<br>
-      Quiz 5: 1-A, 2-A, 3-C, 4-A, 5-B</p>
-
-      <p><strong>Hard Quizzes:</strong><br>
-      Quiz 1: 1-A, 2-B, 3-B, 4-B, 5-B<br>
-      Quiz 2: 1-A, 2-B, 3-A, 4-A, 5-A<br>
-      Quiz 3: 1-A, 2-B, 3-C, 4-D, 5-E<br>
-      Quiz 4: 1-A, 2-B, 3-C, 4-D, 5-E<br>
-      Quiz 5: 1-A, 2-B, 3-C, 4-D, 5-E<br>
-      Quiz 6: 1-A, 2-B, 3-C, 4-D, 5-E</p>
+      <div class="quiz-block">
+        <h3>Easy Quiz 1</h3>
+        <ul>
+          <li>1. What color is the caution flag? A. Blue B. Yellow C. Green D. Red</li>
+          <li>2. What does NASCAR stand for? A. National Auto Series B. Speed Club C. Racing Assoc. D. Stock Car Racing</li>
+          <li>3. How many tires on a stock car? A. 4 B. 6 C. 5 D. 3</li>
+          <li>4. Which oval is the biggest? A. Daytona B. Bristol C. Martinsville D. Atlanta</li>
+          <li>5. What’s a pit stop? A. Time out B. Engine test C. Fuel/tire stop D. Lap reset</li>
+        </ul>
+      </div>
+      <div class="quiz-block">
+        <h3>Easy Quiz 2</h3>
+        <ul>
+          <li>1. Where is the Daytona 500 held? A. Daytona B. Talladega C. Texas D. Charlotte</li>
+          <li>2. What’s the red flag mean? A. Crash B. Pit C. Stop D. End</li>
+          <li>3. What number did Dale Sr. drive? A. 24 B. 43 C. 88 D. 3</li>
+          <li>4. What’s the shape of Martinsville? A. Oval B. Triangle C. Paperclip D. Circle</li>
+          <li>5. What do pit crews wear? A. Uniforms B. Jeans C. Suits D. Tracksuits</li>
+        </ul>
+      </div>
+      <div class="quiz-block">
+        <h3>Medium Quiz 1</h3>
+        <ul>
+          <li>1. Who won the 2019 Cup Series? A. Truex B. Harvick C. Busch D. Hamlin</li>
+          <li>2. What is the shortest track? A. Richmond B. Bristol C. Martinsville D. Phoenix</li>
+          <li>3. What year did Dale Sr. die? A. 1999 B. 2001 C. 1995 D. 2003</li>
+          <li>4. What manufacturer has most wins? A. Chevy B. Toyota C. Ford D. Dodge</li>
+          <li>5. Who is Joey Logano's rival? A. Hamlin B. Busch C. Truex D. Johnson</li>
+        </ul>
+      </div>
+      <div class="quiz-block">
+        <h3>Medium Quiz 2</h3>
+        <ul>
+          <li>1. Who won the 2020 Cup Series title? A. Elliott B. Harvick C. Logano D. Truex</li>
+          <li>2. What year was NASCAR founded? A. 1948 B. 1950 C. 1945 D. 1930</li>
+          <li>3. Who is the only 7-time champ still active? A. Johnson B. Petty C. Earnhardt D. None</li>
+          <li>4. Who is the youngest Cup champ? A. Byron B. Logano C. Gordon D. Larson</li>
+          <li>5. What’s a restrictor plate? A. Airflow limit B. Car part C. Tire D. Fuel rule</li>
+        </ul>
+      </div>
+      <div class="quiz-block">
+        <h3>Hard Quiz 1</h3>
+        <ul>
+          <li>1. Who drove #43 after Petty? A. Bobby Hamilton B. John Andretti C. Almirola D. Jones</li>
+          <li>2. First road course in playoffs? A. Watkins Glen B. Charlotte Roval C. Sonoma D. COTA</li>
+          <li>3. Who won the 2004 title? A. Gordon B. Busch C. Johnson D. Stewart</li>
+          <li>4. What year did Next Gen debut? A. 2021 B. 2022 C. 2020 D. 2019</li>
+          <li>5. What track has dirt surface? A. Bristol B. Martinsville C. Dover D. Texas</li>
+          <li>6. Who has most Xfinity wins? A. Harvick B. Kyle Busch C. Logano D. Keselowski</li>
+        </ul>
+      </div>
+      <div class="quiz-block">
+        <h3>Hard Quiz 2</h3>
+        <ul>
+          <li>1. Who won the 1979 Daytona 500? A. Petty B. Pearson C. Waltrip D. Yarborough</li>
+          <li>2. Who broke Jeff Gordon’s rookie win record? A. Johnson B. Stewart C. Edwards D. Larson</li>
+          <li>3. What is NASCAR's longest track? A. Daytona B. Charlotte C. Road America D. Talladega</li>
+          <li>4. When did COT debut? A. 2005 B. 2006 C. 2007 D. 2008</li>
+          <li>5. What’s the width of a Cup car? A. 75 in B. 77 in C. 79 in D. 80 in</li>
+          <li>6. Who had most DNFs in 2001? A. Waltrip B. Marlin C. Park D. Biffle</li>
+        </ul>
+      </div>
+      <div class="answer-key">
+        <h3>Answer Key</h3>
+        <p><strong>Easy Quiz 1:</strong> 1. B, 2. D, 3. A, 4. A, 5. C</p>
+        <p><strong>Easy Quiz 2:</strong> 1. A, 2. C, 3. D, 4. C, 5. A</p>
+        <p><strong>Medium Quiz 1:</strong> 1. C, 2. C, 3. B, 4. A, 5. A</p>
+        <p><strong>Medium Quiz 2:</strong> 1. A, 2. A, 3. D, 4. B, 5. A</p>
+        <p><strong>Hard Quiz 1:</strong> 1. A, 2. B, 3. B, 4. B, 5. A, 6. B</p>
+        <p><strong>Hard Quiz 2:</strong> 1. A, 2. D, 3. D, 4. C, 5. C, 6. A</p>
+      </div>
     </section>
   </main>
   <footer>
